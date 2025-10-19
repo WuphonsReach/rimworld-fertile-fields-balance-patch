@@ -1,0 +1,75 @@
+<!--
+Original math for this is "1" stone chunk to "2" crushed rocks for workAmount 600.
+Or "5" to "10" for the bulk recipe for 3000 workAmount.
+
+- Increase conversion rate from 1:2 to 1:20
+- Lower single recipe work amount by 5x
+- Give a 20% reduction on work amount for bulk.
+
+MakeCrushedRocksBlock is 10 blocks to 10 rock.  But stone chunks -> blocks is a 1:20 ratio.  
+Plus the time to create the stone blocks.  So that chunk recipe should output 1:20.  
+
+-->
+<Patch>
+    <!-- EXAMPLE OF HOW TO ADJUST INPUT QUANTITY
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName = "MakeCrushedRocks"]/ingredients/li[filter/categories[li="StoneChunks"]]/count</xpath>
+    <value>
+      <count>1</count>
+    </value>
+  </Operation>
+  -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocks"]/products/CrushedRocks</xpath>
+        <value>
+            <CrushedRocks>20</CrushedRocks>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocks"]/workAmount</xpath>
+        <value>
+            <workAmount>120</workAmount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocks"]/description</xpath>
+        <value>
+            <description>Break a stone chunk into 20 crushed rocks.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocksBulk"]/products/CrushedRocks</xpath>
+        <value>
+            <CrushedRocks>100</CrushedRocks>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocksBulk"]/workAmount</xpath>
+        <value>
+            <workAmount>480</workAmount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocksBulk"]/description</xpath>
+        <value>
+            <description>Break 5 stone chunks into 100 crushed rocks.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocksBlock"]/workAmount</xpath>
+        <value>
+            <workAmount>120</workAmount>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocksBlockBulk"]/workAmount</xpath>
+        <value>
+            <workAmount>480</workAmount>
+        </value>
+    </Operation>
+
+</Patch>
