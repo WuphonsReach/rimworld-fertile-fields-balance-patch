@@ -6,8 +6,9 @@ Or "5" to "10" for the bulk recipe for 3000 workAmount.
 - Lower single recipe work amount by 5x
 - Give a 20% reduction on work amount for bulk.
 
-MakeCrushedRocksBlock is 10 blocks to 10 rock.  But stone chunks -> blocks is a 1:20 ratio.  
+MakeCrushedRocksBlock is 10 blocks to 1 rock.  But stone chunks -> blocks is a 1:20 ratio.  
 Plus the time to create the stone blocks.  So that chunk recipe should output 1:20.  
+And the block to crushed rock recipe should output 1 rock per block instead of 1:10 rocks:blocks.
 
 -->
 <Patch>
@@ -59,16 +60,28 @@ Plus the time to create the stone blocks.  So that chunk recipe should output 1:
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocksBlock"]/workAmount</xpath>
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocksBlock"]/products/CrushedRocks</xpath>
         <value>
-            <workAmount>120</workAmount>
+            <CrushedRocks>10</CrushedRocks>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocksBlock"]/description</xpath>
+        <value>
+            <description>Break 10 stone blocks into 10 crushed rocks.</description>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocksBlockBulk"]/workAmount</xpath>
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocksBlockBulk"]/products/CrushedRocks</xpath>
         <value>
-            <workAmount>480</workAmount>
+            <CrushedRocks>100</CrushedRocks>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeCrushedRocksBlockBulk"]/description</xpath>
+        <value>
+            <description>Break 100 stone blocks into 100 crushed rocks.</description>
         </value>
     </Operation>
 
