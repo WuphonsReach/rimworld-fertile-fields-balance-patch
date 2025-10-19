@@ -1,0 +1,22 @@
+<!--
+Original math for this is "1" sand to "1" clay for workAmount 200.
+
+- Increase input/output by 5x making this a "make 5" and "make 25" (bulk)
+- Lower single recipe work amount by 2x
+- Give a 20% reduction on work amount for bulk.
+
+-->
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeClay"]/workAmount</xpath>
+        <value>
+            <workAmount>100</workAmount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName = "MakeClayBulk"]/workAmount</xpath>
+        <value>
+            <workAmount>400</workAmount>
+        </value>
+    </Operation>
+</Patch>
