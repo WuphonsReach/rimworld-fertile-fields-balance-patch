@@ -20,6 +20,6 @@
         <!-- <li>greysuki.RF.fertilefields</li> -->
     </loadAfter>
     <description>
-Balance patch for Rainbeau's Fertile Fields.
+Making crushed rocks, sand and clay took too long in the original Fertile Fields.  This mod makes adjustments to both the quantity and work amounts of the various recipes to help with that.
     </description>
 </ModMetaData>
