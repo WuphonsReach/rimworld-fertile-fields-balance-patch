@@ -8,50 +8,50 @@ Original math for this is "1" sand to "1" clay for workAmount 200.
 -->
 <Patch>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeClay"]/workAmount</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeClay"]/workAmount</xpath>
         <value>
             <workAmount>150</workAmount>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeClay"]/ingredients/li[filter/thingDefs[li="SandPile"]]/count</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeClay"]/ingredients/li[filter/thingDefs[li="SandPile"]]/count</xpath>
         <value>
             <count>5</count>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeClay"]/products/RFFClay</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeClay"]/products/RFFClay</xpath>
         <value>
             <RFFClay>5</RFFClay>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeClay"]/description</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeClay"]/description</xpath>
         <value>
             <description>Grind 5 sand into finer particles to create 5 clay.</description>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeClayBulk"]/workAmount</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeClayBulk"]/workAmount</xpath>
         <value>
             <workAmount>480</workAmount>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeClayBulk"]/ingredients/li[filter/thingDefs[li="SandPile"]]/count</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeClayBulk"]/ingredients/li[filter/thingDefs[li="SandPile"]]/count</xpath>
         <value>
             <count>25</count>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeClayBulk"]/products/RFFClay</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeClayBulk"]/products/RFFClay</xpath>
         <value>
             <RFFClay>25</RFFClay>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeClayBulk"]/description</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeClayBulk"]/description</xpath>
         <value>
             <description>Grind 25 sand into finer particles to create 25 clay.</description>
         </value>

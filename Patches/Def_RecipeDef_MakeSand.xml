@@ -9,50 +9,50 @@ Original math for this is "1" crushed rocks to "1" sand for workAmount 200.
 <Patch>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeSand"]/workAmount</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeSand"]/workAmount</xpath>
         <value>
             <workAmount>150</workAmount>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeSand"]/ingredients/li[filter/thingDefs[li="CrushedRocks"]]/count</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeSand"]/ingredients/li[filter/thingDefs[li="CrushedRocks"]]/count</xpath>
         <value>
             <count>5</count>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeSand"]/products/SandPile</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeSand"]/products/SandPile</xpath>
         <value>
             <SandPile>5</SandPile>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeSand"]/description</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeSand"]/description</xpath>
         <value>
             <description>Grind up 5 crushed rocks to create 5 sand.</description>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeSandBulk"]/workAmount</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeSandBulk"]/workAmount</xpath>
         <value>
             <workAmount>480</workAmount>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeSandBulk"]/ingredients/li[filter/thingDefs[li="CrushedRocks"]]/count</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeSandBulk"]/ingredients/li[filter/thingDefs[li="CrushedRocks"]]/count</xpath>
         <value>
             <count>25</count>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeSandBulk"]/products/SandPile</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeSandBulk"]/products/SandPile</xpath>
         <value>
             <SandPile>25</SandPile>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/RecipeDef[defName = "MakeSandBulk"]/description</xpath>
+        <xpath>Defs/RecipeDef[defName="MakeSandBulk"]/description</xpath>
         <value>
             <description>Grind up 25 crushed rocks to create 25 sand.</description>
         </value>
