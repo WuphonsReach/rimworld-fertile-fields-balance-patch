@@ -3,13 +3,22 @@
 Making crushed rocks, sand and clay took too long in the original Fertile Fields.  This mod makes adjustments to both the quantity and work amounts of the various recipes to help with that.
 
 - [rimworld-fertile-fields-balance-patch](#rimworld-fertile-fields-balance-patch)
+- [Adding/Removing Mid-Game](#addingremoving-mid-game)
 - [Recipe Changes](#recipe-changes)
   - [Crushed Rocks](#crushed-rocks)
   - [Sand](#sand)
   - [Clay](#clay)
 - [Source and Feedback](#source-and-feedback)
 
+# Adding/Removing Mid-Game
+
+This mod is safe to add mid-game.  
+
+Removing it mid-game might do weird things with your workstation recipe bills.  I've not tested that.  But it's probably okay as this is just an XML patch mod which alters existing recipes and doesn't add new bills.
+
 # Recipe Changes
+
+Here are the recipe changes.  The goal was to reduce haul time by making bulk recipes as well as some other balance tweaks.
 
 ## Crushed Rocks
 
@@ -38,6 +47,6 @@ The original recipe was 1 sand to 1 clay, which results in a lot of hauling time
 
 # Source and Feedback
 
-[WuphonsReach/rimworld-fertile-fields-balance-patch](https://github.com/WuphonsReach/rimworld-fertile-fields-balance-patch)
+GitHub: [WuphonsReach/rimworld-fertile-fields-balance-patch](https://github.com/WuphonsReach/rimworld-fertile-fields-balance-patch)
 
-Issues and patch requests should be reported at GitHub on the main repository.
+Issues and patch requests should be reported at GitHub on the above repository.
