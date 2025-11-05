@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <packageId>wuphonsreach.FertileFieldsBalancePatch</packageId>
+    <packageId>wr.FertileFieldsBalancePatch</packageId>
     <modVersion>0.1</modVersion>
     <name>Fertile Fields Balance Patch</name>
     <author>wuphonsreach</author>
