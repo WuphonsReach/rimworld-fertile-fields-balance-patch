@@ -1,13 +1,6 @@
 <Patch>
 
   <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="Terraform_Stone-Topsoil"]/statBases/WorkToBuild</xpath>
-    <value>
-      <WorkToBuild>200</WorkToBuild><!-- was 250 -->
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="Terraform_Topsoil-DirtFert"]/statBases/WorkToBuild</xpath>
     <value>
       <WorkToBuild>200</WorkToBuild><!-- was 500 -->
