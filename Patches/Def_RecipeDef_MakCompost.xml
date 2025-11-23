@@ -1,0 +1,29 @@
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeCompost"]/workAmount</xpath>
+        <value>
+            <workAmount>150</workAmount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeCompost"]/ingredients/li/count</xpath>
+        <value>
+            <count>0.1</count>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeCompost5"]/workAmount</xpath>
+        <value>
+            <workAmount>600</workAmount>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="MakeCompost5"]/ingredients/li/count</xpath>
+        <value>
+            <count>0.5</count>
+        </value>
+    </Operation>
+
+</Patch>
