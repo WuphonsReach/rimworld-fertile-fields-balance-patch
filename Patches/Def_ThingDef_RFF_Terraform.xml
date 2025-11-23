@@ -3,35 +3,35 @@
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="Terraform_Topsoil-DirtFert"]/statBases/WorkToBuild</xpath>
     <value>
-      <WorkToBuild>200</WorkToBuild><!-- was 500 -->
+      <WorkToBuild>150</WorkToBuild><!-- was 500 -->
     </value>
   </Operation>
 
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="Terraform_SoilF-SoilRich"]/statBases/WorkToBuild</xpath>
     <value>
-      <WorkToBuild>200</WorkToBuild><!-- was 500 -->
+      <WorkToBuild>150</WorkToBuild><!-- was 500 -->
     </value>
   </Operation>
 
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="Terraform_SoilRich-SoilRich"]/statBases/WorkToBuild</xpath>
     <value>
-      <WorkToBuild>200</WorkToBuild><!-- was 500 -->
+      <WorkToBuild>150</WorkToBuild><!-- was 500 -->
     </value>
   </Operation>
 
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="Terraform_SoilRich-SoilTilled"]/statBases/WorkToBuild</xpath>
     <value>
-      <WorkToBuild>300</WorkToBuild><!-- was 1000 -->
+      <WorkToBuild>150</WorkToBuild><!-- was 1000 -->
     </value>
   </Operation>
 
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="Terraform_SoilWorn-SoilF"]/statBases/WorkToBuild</xpath>
     <value>
-      <WorkToBuild>200</WorkToBuild><!-- was 500 -->
+      <WorkToBuild>150</WorkToBuild><!-- was 500 -->
     </value>
   </Operation>        
 </Patch>
